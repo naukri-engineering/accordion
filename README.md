@@ -6,7 +6,7 @@ Displays collapsible content panels for presenting information in a limited amou
 -------------------------------------------------------
 
 ## Demo
-[Click me --:](http://saeed3e.github.io/accordion/)
+[Click me --:](http://naukri-engineering.github.io/accordion/)
 
 -------------------------------------------------------
 -------------------------------------------------------
