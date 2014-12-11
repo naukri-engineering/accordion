@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Accordion</title>
+<link rel="stylesheet" href="c/base.css" type="text/css"/>
+<link rel="stylesheet" href="c/accordion.css" type="text/css"/>
+<link rel="stylesheet" href="c/qunit-1.14.0.css" type="text/css"/>
+<style>
+    body{ margin:0 auto; width:1000px; height:1000px }
+    h1{ text-align:center; margin:40px 0}
+    h2{ font-size:16px}
+    .hr{height:40px; clear:both; width:100%;}
+    .fl{ float:left} .acord{ margin-right:20px}
+    .fr{float: right;}
+    .clr{clear: both;}
+</style>
+</head>
+
+<body>	
+    <h1>Accordion</h1>
+    <div class="clr">
+        <a class="fr" href="https://github.com/saeed3e/accordion">Downdload on GitHub</a>
+    </div>
+    
+	<div class="fl clr">
+        <button id="enable">Enable</button><button id="disable">Disable</button>
+        <h2 style="margin-top: 25px;">Default functionality</h2>
+        <div id="acord1" class="acord" Get jobs handpicked by experts and be an early applicant>
+            <h3 class="acord_head">Section 1</h3>
+            <div class="acord_cont">
+                <p>
+                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
+                </p>
+            </div>
+            <h3 class="acord_head">Section 2</h3>
+            <div class="acord_cont">
+                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
+            </div>
+            <h3 class="acord_head">Section 3</h3>
+            <div class="acord_cont">
+                <p>Get a professional resume written by experts in text or visual format</p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3 class="acord_head">Section 4</h3>
+            <div class="acord_cont">
+                <p>
+                    Get jobs handpicked by experts and be an early applicant
+                </p>
+          </div>
+    </div>    
+    </div>
+	
+	<div class="fl">    
+        <h2>Collapsible : true</h2>
+        <div id="acord2" class="acord fl" Get jobs handpicked by experts and be an early applicant>
+            <h3 class="acord_head">Section 1</h3>
+            <div class="acord_cont">
+                <p>
+                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
+                </p>
+            </div>
+            <h3 class="acord_head">Section 2</h3>
+            <div class="acord_cont">
+                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
+            </div>
+            <h3 class="acord_head">Section 3</h3>
+            <div class="acord_cont">
+                <p>Get a professional resume written by experts in text or visual format</p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3 class="acord_head">Section 4</h3>
+            <div class="acord_cont">
+                <p>
+                    Get jobs handpicked by experts and be an early applicant
+                </p>
+          </div>
+    </div>
+    </div>
+
+	<div class="fl">    
+        <h2>Collapsible: true</h2>
+        <h2>previousOpen: true</h2>
+        <div id="acord3" class="acord fl" Get jobs handpicked by experts and be an early applicant>
+            <h3 class="acord_head">Section 1</h3>
+            <div class="acord_cont">
+                <p>
+                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
+                </p>
+            </div>
+            <h3 class="acord_head">Section 2</h3>
+            <div class="acord_cont">
+                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
+            </div>
+            <h3 class="acord_head">Section 3</h3>
+            <div class="acord_cont">
+                <p>Get a professional resume written by experts in text or visual format</p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3 class="acord_head">Section 4</h3>
+            <div class="acord_cont">
+                <p>
+                    Get jobs handpicked by experts and be an early applicant
+                </p>
+            </div>
+    	</div>
+    </div>
+    <div class="fl">    
+        <h2>Collapsible: true</h2>
+        <h2>openAll : true</h2>
+        <div id="acord4" class="acord fl" Get jobs handpicked by experts and be an early applicant>
+            <h3 class="acord_head">Section 1</h3>
+            <div class="acord_cont">
+                <p>
+                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
+                </p>
+            </div>
+            <h3 class="acord_head">Section 2</h3>
+            <div class="acord_cont">
+                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
+            </div>
+            <h3 class="acord_head">Section 3</h3>
+            <div class="acord_cont">
+                <p>Get a professional resume written by experts in text or visual format</p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <h3 class="acord_head">Section 4</h3>
+            <div class="acord_cont">
+                <p>
+                    Get jobs handpicked by experts and be an early applicant
+                </p>
+            </div>
+    	</div>
+    </div>
+
+	<div class="hr"></div>
+    <h1>Documentation</h1>
+    <div id="content">
+		<!-- <header class="mt30"><h3>Dependencies</h3></header>
+        <ul class="dependnecy">
+            <li><a href="c/accordion.css">Accordion Core css</a></li>
+            <li><a href="j/accordion.js">Accordion javascript plugin file</a></li>
+        </ul> -->
+	<section class="quickNav mt30">
+    <header><h2>Accordion parameters</h2></header>
+    <div class="quickNavSec">
+    	<h3>Options</h3>
+        <div><a href="#option-active">active</a></div>
+        <div><a href="#option-disabled">disabled</a></div>
+        <div><a href="#option-openEvent">openEvent</a></div>
+        <div><a href="#option-collapsible">collapsible</a></div>
+        <div><a href="#option-previousOpen">previousOpen</a></div>        
+        <div><a href="#option-allOpen">allOpen</a></div>                
+        <div><a href="#option-icons">icons</a></div>                   
+    </div>
+    <div class="quickNavSec">
+    	<h3>Events</h3>
+        <div><a href="#event-onClick">callBack</a></div>
+        <div><a href="#event-onClick">enabled</a></div>
+        <div><a href="#event-onClick">disabled</a></div>
+        <div><a href="#event-onClick">expand</a></div>
+        <div><a href="#event-onClick">collapse</a></div>
+    </div>
+</section>
+
+
+<section id="options" class="mt30">
+	<header><h2>Options</h2></header>
+    <div id="option-active" class="api-item first-item">
+        <h3>active
+        	<span class="option-type"><strong>Type: </strong>Integer</span>
+        </h3>
+        <div class="default">
+            <strong>Default: </strong><code>0</code>
+        </div>
+		<div>
+			Which panel is currently open.
+		</div>
+		<ul class="dependnecy">
+	        <li>
+				<strong>Boolean</strong>: Setting <code>active</code> to <code>false</code> will active zero-based index of the panel and <code>true</code> will active first index of the panel</li>
+            <li>
+                <strong>Integer</strong>: The zero-based index of the panel that is active (open). A negative value selects panels going backward from the last panel.
+            </li>
+        </ul>
+		<strong>Code examples:</strong><p>Initialize the Accordion with the <code>active</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">                            
+                            <div class="line n1">1</div>                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ active: <span class="number">1</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	</div>
+
+    <div id="option-disabled" class="api-item">
+       
+       <h3>disabled<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span></h3>
+        <div class="default">
+ 	       <strong>Default: </strong><code>false</code>
+        </div>
+        <div>Disables the accordion if set to <code>true</code>.</div>
+        <strong>Code examples:</strong>
+        <p>Initialize the accordion with the <code>disabled</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">
+                            
+                                <div class="line n1">1</div>
+                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ disabled: <span class="literal">true</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <div id="option-openEvent" class="api-item">
+        <h3>openEvent<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#String">String</a></span>
+        </h3>
+        <div class="default">
+        <strong>Default: </strong><code>"click"</code>
+        </div>
+        <div>The type of event that the accordions should react to in order to activate the accordion. To activate on hover, use <code>"mouseover"</code>.</div>
+        <strong>Code examples:</strong><p>Initialize the accordion with the <code>openEvent</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">                        
+                            <div class="line n1">1</div>                        
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ openEvent: <span class="string">"mouseover"</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="option-collapsible" class="api-item">
+        <h3>collapsible<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span></h3>
+        <div class="default">
+	        <strong>Default: </strong><code>false</code>
+        </div>
+        <div>Whether all the sections can be closed at once. Allows collapsing the active section.</div>
+        <strong>Code examples:</strong><p>Initialize the accordion with the <code>collapsible</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">
+                            
+                                <div class="line n1">1</div>
+                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ collapsible: <span class="literal">true</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="option-previousOpen" class="api-item">
+        <h3>previousOpen<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span></h3>
+        <div class="default">
+	        <strong>Default: </strong><code>false</code>
+        </div>
+        <div>if <code>true</code> then previous section remain open while active to other section.</div>
+        <strong>Code examples:</strong><p>Initialize the accordion with the <code>previousOpen</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">
+                            
+                                <div class="line n1">1</div>
+                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ previousOpen: <span class="literal">true</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+    <div id="option-allOpen" class="api-item">
+        <h3>openAll<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span></h3>
+        <div class="default">
+	        <strong>Default: </strong><code>false</code>
+        </div>
+        <div>Whether to show all section open(active) at once. Allows collapsing to each section.</div>
+        <strong>Code examples:</strong><p>Initialize the accordion with the <code>openAll</code> option specified with collapsible:true option</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">                            
+	                        <div class="line n1">1</div>                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ collapsible: <span class="literal">true</span>, openAll: <span class="literal">true</span> });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="option-icons" class="api-item">
+        <h3>icons<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Object">Object</a></span></h3>
+        <div class="default">
+	        <strong>Default: </strong><code>{ "header": "acordUp", "activeHeader": "acordDown" }</code>
+        </div>
+        <div>
+            <p>Icons to use for headers. Set to <code>false</code> to have no icons displayed.</p>
+            <ul>
+                <li>header (string, default: "acordUp")</li>
+                <li>activeHeader (string, default: "acordDown")</li>
+            </ul>
+        </div>
+		<strong>Code examples:</strong><p>Initialize the accordion with the <code>icons</code> option specified:</p>
+        <div class="syntaxhighlighter javascript nogutter">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="gutter">
+                            
+                                <div class="line n1">1</div>
+                            
+                        </td>
+                        <td class="code">
+                            <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({ icons: { <span class="string">"header"</span>: <span class="string">"acordUp"</span>, <span class="string">"activeHeader"</span>: <span class="string">"acordDown"</span> } });</code></div></div></pre>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <section id="events">
+    	<header><h2>Events</h2></header>
+        <div id="event-onClick" class="api-item first-item">
+            <h3>onClick<span class="returns">Type: <code>accordionactivate</code></span></h3>
+            <div>
+                <p>Triggered after a panel has been activated.</div>
+            </div>            
+            <div>
+	            <strong>Code examples:</strong><p>Initialize the accordion with the activate callback specified:</p>
+				<div class="syntaxhighlighter javascript nogutter">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="gutter">
+                                
+                                    <div class="line n1">1</div>
+                                
+                                    <div class="line n2">2</div>
+                                
+                                    <div class="line n3">3</div>
+                                
+                            </td>
+                            <td class="code">
+                                <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).accordion({</code></div></div><div class="container"><div class="line"><code>  onClick: <span class="keyword">function</span>( ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>         
+            </div>
+        </div>
+    </section>
+</section>
+</div>
+   
+<script src="j/jquery-1.8.js" type="text/javascript"></script>
+<script src="j/accordion.js" type="text/javascript"></script>
+<script src="j/qunit-1.14.0.js" ></script>
+<script src="j/blanket.min.js" ></script>
+
+<script>	
+
+
+var abc = $('#acord1').accordion({
+				//onClick  : function(){ console.log("Hey, Don't Play with me")},		
+				active   : false,
+
+				//disabled:[0]
+			});	
+
+var ob2 =	$('#acord2').accordion({
+        		collapsible : true,
+        		showHideSpeed: 'medium',
+/*                callBack : function(){
+                    console.log('abc',arguments[0][0],arguments[1]);
+                }
+*/                
+
+        	});	
+
+var ob3 = $('#acord3').accordion({
+    		collapsible : true,
+    		previousOpen : true,
+    		active:[0,2],
+    		showHideSpeed: 'slow',
+    		openEvent: 'mouseover',		
+    		icons: { "header": "plus", "activeHeader": "minus" }
+    	});
+
+var ob4 =	$('#acord4').accordion({
+        		collapsible : true,
+        		openAll : true,
+                callBack : function(){
+                    console.log('abc',arguments[0][0],arguments[1]);
+                }
+        	});
+
+$('#disable').click(function(){
+    abc.disabled([0,3]);
+});
+$('#enable').click(function(){
+    abc.enabled([0,3]);
+});
+
+</script>
+
+</body>
+</html>

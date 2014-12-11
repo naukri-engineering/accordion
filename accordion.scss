@@ -1,0 +1,40 @@
+.acord{
+ 	width:200px;
+	.acord_head{
+        cursor: pointer;
+        padding: 10px 25px;
+        margin: 3px 0 0 0;
+        background-color:#e6e6e6;
+        font-size:15px;
+        color:#747474;
+        position:relative;
+        &:hover{
+	         background-color:#CECECE
+        }
+        /*for upDown arrow*/
+
+    }
+     .acordUp span,.acordDown span{background:url(../i/acordSprite.png) no-repeat;width: 7px;height: 7px;top: 17px;left:10px; position:absolute}
+    .acordUp span{background-position:0px -7px}
+    .acordDown span{background-position:0px 0px}
+
+    /*For plus-minus arrow*/
+    .plus span,.minus span{background:url(../i/acordSprite2.png) no-repeat;width: 8px;height: 8px;top: 17px;left:10px; position:absolute}
+    .minus span{background-position:0px -9px}
+    .plus span{background-position:0px 0px}
+
+    .acord_cont{
+        padding: 1em 2.2em;
+        border-top: 0;
+        overflow: auto;
+        display:none;
+        border:solid #ccc;
+        border-width:1px
+    }
+    .active{     	
+         display:block;   
+    }
+    .disable{
+    	background-color: #C0C0C0;
+    }
+}
