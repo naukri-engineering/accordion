@@ -3,13 +3,12 @@ Accordion (version : v1.0.0)
 Displays collapsible content panels for presenting information in a limited amount of space.
 
 -------------------------------------------------------
--------------------------------------------------------
 
 ## Demo
 [Click me --:](http://naukri-engineering.github.io/accordion/)
 
 -------------------------------------------------------
--------------------------------------------------------
+
 
 ## Browser Support
 * Internet Explorer 7+
@@ -19,7 +18,6 @@ Displays collapsible content panels for presenting information in a limited amou
 * Opera 10.6+
 
 -------------------------------------------------------
--------------------------------------------------------
 
 ## Size
 * Production (minified): 2.4 KB
@@ -27,8 +25,6 @@ Displays collapsible content panels for presenting information in a limited amou
 * Development (non-minified) : 6.3 KB
 
 
-
--------------------------------------------------------
 -------------------------------------------------------
 
 ## Getting Started
@@ -54,7 +50,6 @@ Displays collapsible content panels for presenting information in a limited amou
 * Include the Style Sheet(accordion.css)
 * Include the suggestor javascript library(accordion.js) & updated jQuery liberary
 
--------------------------------------------------------
 -------------------------------------------------------
 
 
@@ -82,7 +77,6 @@ collapse | If call with no arguments then collapse all sections of accordion, if
 expand | If call with no arguments then expend all sections of accordion, if pass a single argument as an interger/string then expend the given index section , if argument pass as an array of intergers then expand only matched indexes sections.
 
 
--------------------------------------------------------
 -------------------------------------------------------
 
 ## Usage
