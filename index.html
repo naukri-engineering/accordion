@@ -1,211 +1,520 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Accordion</title>
-<link rel="stylesheet" href="c/base.css" type="text/css"/>
-<link rel="stylesheet" href="c/accordion.css" type="text/css"/>
-<link rel="stylesheet" href="c/qunit-1.14.0.css" type="text/css"/>
-<style>
-    body{ margin:0 auto; width:1000px; height:1000px }
-    h1{ text-align:center; margin:40px 0}
-    h2{ font-size:16px}
-    .hr{height:40px; clear:both; width:100%;}
-    .fl{ float:left} .acord{ margin-right:20px}
-    .fr{float: right;}
-    .clr{clear: both;}
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="c/accordion.css" type="text/css" />
+    <link rel="stylesheet" href="c/lightbox.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>	
-    <h1>Accordion</h1>
-    <div class="clr">
-        <a class="fr" href="https://github.com/naukri-engineering/accordion">Downdload on GitHub</a>
+<body>
+    <div class="headGNBWrap"> <div class="headGNB cloneCont wrap"><a class="nLogo fl" href="http://www.naukri.com"></a><ul class="midSec menu"><li class="mActive"><a title="Search Jobs" href="javascript:void()"><span class="topIcon jobs">&nbsp;</span><div class="mTxt">Jobs</div></a><div class="subMenu c2"><ul><li><a target="_blank" href="http://jobsearch.naukri.com" title="Browse All Jobs">Browse All Jobs</a></li><li><a target="_blank" href="http://jobsearch.naukri.com/jobs-by-location" title="Jobs by Location">Jobs by Location</a></li><li><a target="_blank" href="http://jobsearch.naukri.com/top-skill-jobs" title="Jobs by Skill">Jobs by Skill</a></li><li><a target="_blank" href="http://jobsearch.naukri.com/top-jobs-by-designations" title="Jobs by Designation">Jobs by Designation</a></li></ul><ul><li><a target="_blank" href="http://jobsearch.naukri.com/top-company-jobs" title="Jobs by Company">Jobs by Company</a></li><li><a target="_blank" href="http://jobsearch.naukri.com/jobs-by-category" title="Jobs by Category">Jobs by Category</a></li><li><a data-domain="http://jobsearch.naukri.com/" class="target_advanceSeachLayer" target="_blank" href="http://jobsearch.naukri.com/advanced-search" title="Advanced Search">Advanced Search</a></li><li><a href="http://www.naukri.com/tieups/tieups.php?othersrcp=5424&amp;id=" title="Post your Resume">Post your Resume</a></li></ul></div></li><li class="''"><a href="http://recruiters.naukri.com" title="Search Recruiters" target="_blank"><span class="topIcon jobs Recr">&nbsp;</span><div class="mTxt">Recruiters</div></a><div class="subMenu"><ul><li><a target="_blank" href="http://recruiters.naukri.com" title="Browse All Recruiters">Browse All Recruiters</a></li><li><a target="_blank" href="http://naukrirecruiter.naukri.com?src=128" title="Go to NaukriRecruiter">Go to NaukriRecruiter</a></li></ul></div></li><li class="''"><a title="Jobs Posted By Top Companies" href="http://jobsearch.naukri.com/top-company-jobs" target="_blank"><span class="topIcon jobs Comp">&nbsp;</span><div class="mTxt">Companies</div></a></li><li class="''"><a title="Naukri FastForward- Resume Services" href="http://resume.naukri.com/resume-services?fftid=100001&amp;id=" target="_blank"><span class="topIcon jobs Serv">&nbsp;</span><div class="mTxt">Services</div></a><div class="subMenu c3"><ul class="group"><li class="header1"><a title="Resume Writing">Resume Writing</a></li><li><a target="_blank" href="http://resume.naukri.com/cv-for-freshers-entry-level?fftid=101001" title="Text Resume">Text Resume</a></li><li><a target="_blank" href="http://resume.naukri.com/visual-resume-writing?fftid=101002" title="Visual Resume">Visual Resume</a></li><li><a target="_blank" href="http://resume.naukri.com/resume-quality-score?fftid=101003" title="Resume Quality Score - Free">Resume Quality Score - Free</a></li><li class="lastSib"><a target="_blank" href="http://resume.naukri.com/sample-resume-for-freshers?fftid=101004" title="Resume Samples">Resume Samples</a></li><li class="header1"><a title="Jobs For You">Jobs For You</a></li><li><a target="_blank" href="http://resume.naukri.com/job-alerts-on-mobile-mail?fftid=101011#jobmail" title="Jobs4U">Jobs4U</a></li></ul><ul class="group"><li class="header1"><a>Profile Enhancement</a></li><li><a target="_blank" href="http://resume.naukri.com/online-courses?fftid=101006" title="e-Courses"><span class="newStatus"></span>e-Courses</a></li><li><a target="_blank" href="http://resume.naukri.com/online-test?fftid=101007" title="Certifications">Certifications</a></li><li class="lastSib"><a target="_blank" href="http://resume.naukri.com/background-checks?fftid=101008" title="Background Check">Background Check</a></li><li class="header1"><a>Recruiter Reach</a></li><li><a target="_blank" href="http://resume.naukri.com/job-placement-consultants?fftid=101009" title="Resume Display">Resume Display</a></li><li><a target="_blank" href="http://resume.naukri.com/contact-recruiters-hr?fftid=101010" title="RecruiterConnection"><span class="newStatus"></span>RecruiterConnection</a></li></ul><ul class="group"><li class="header1"><a>Other</a></li><li><a target="_blank" href="http://resume.naukri.com/frequently-asked-questions-faq/?fftid=101013" title="Help/FAQ">Help / FAQ</a></li><li><a target="_blank" href="http://resume.naukri.com/articles/?fftid=101014" title="Career Advice">Career Advice</a></li><li><a target="_blank" href="http://resume.naukri.com/contact-us?fftid=101015" title="Contact Us">Contact Us</a></li></ul></div></li><li class="&quot;&quot;"><a href="http://naukri.shiksha.com" target="_blank"><span class="topIcon jobs More">&nbsp;</span><div class="mTxt">More</div></a><div class="subMenu c3"><ul class="group"><li class="header1"><a>Management and Business</a></li><li><a target="_blank" href="http://mba.shiksha.com/mba-coursepage" title="MBA">MBA</a></li><li><a target="_blank" href="http://mba.shiksha.com/distance-mba-coursepage" title="Distance MBA">Distance MBA</a></li><li class="lastSib"><a target="_blank" href="http://mba.shiksha.com/part-time-mba-coursepage" title="Part-Time MBA">Part-Time MBA</a></li><li class="header1"><a>Information Technology</a></li><li><a target="_blank" href="http://naukri.shiksha.com/mca-colleges-in-india-categorypage-10-98-1-0-0-1-1-2-0-none-1-1" title="MCA">MCA</a></li></ul><ul class="group"><li><a target="_blank" href="http://naukri.shiksha.com/mca-distance-education-in-india-categorypage-10-97-1-0-0-1-1-2-0-none-1-1" title="Distance MCA">Distance MCA</a></li><li><a target="_blank" href="http://naukri.shiksha.com/computer-programming-language-courses-in-india-categorypage-10-105-1-0-0-1-1-2-0-none-1-1" title="Software Courses">Software Courses</a></li><li class="lastSib"><a target="_blank" href="http://naukri.shiksha.com/cisco-certification-courses-in-india-categorypage-10-101-1-0-0-1-1-2-0-none-1-1" title="Hardware Courses">Hardware Courses</a></li><li class="header1"><a>Animation, Multimedia</a></li><li><a target="_blank" href="http://naukri.shiksha.com/animation-courses-in-india-categorypage-12-89-1-0-0-1-1-2-0-none-1-1" title="Animation">Animation</a></li><li><a target="_blank" href="http://naukri.shiksha.com/graphic-designing-courses-in-india-categorypage-12-92-1-0-0-1-1-2-0-none-1-1" title="Graphic Designing">Graphic Designing</a></li><li><a target="_blank" href="http://naukri.shiksha.com/web-designing-courses-in-india-categorypage-12-93-1-0-0-1-1-2-0-none-1-1" title="Web Designing">Web Designing</a></li></ul><ul class="group"><li class="header1"><a>More</a></li><li><a target="_blank" href="http://careernavigator.naukri.com" title="Paycheck">Paycheck</a></li><li><a target="_blank" href="http://www.naukri.com/mobile" title="Naukri On Mobile">Naukri On Mobile</a></li><li><a target="_blank" href="http://blogs.naukri.com" title="Naukri Blog">Blog</a></li></ul></div></li>
+    </ul>
+    </div> </div>
+
+    <div class="wrapper">
+        <h1>
+            <a style="" href="https://github.com/naukri-engineering/accordion">Accordion</a>
+        </h1>
+        <div class="clr"></div>
+
+        <ul id="nav" class="nav">
+            <li class="current"><a href="#section-1">All Closed</a></li>
+            <li><a href="#section-2">Default Open and collapsible true</a></li>
+            <li><a href="#section-3">Previous unChanged</a></li>
+            <li><a href="#section-4">On load : Open all section</a></li>
+            <li><a href="#section-5">Enable or Disable</a></li>
+            <li><a href="#section-6">Collapsible and Expand</a></li>
+            <li><a href="#section-7">callBack</a></li>
+            <li><a href="#section-8">openEvent: onmouseover</a></li>
+            <li><a href="#section-9">Show/Hide Speed</a></li>
+            <li><a href="#section-10">Change Header Icons</a></li>
+            <li><a href="#section-10">Expand specific index section</a></li>
+        </ul>
+
+        <aside style="width:700px; float:right">
+
+            <section id="section-1" style="margin-top:0">
+                <a class="showCode" data-id= "1" href="javascrip:;">show code</a>
+                <h2>Default functionality</h2>
+                <div id="acord1" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-2">
+                <a class="showCode" data-id= "2" href="javascrip:;">show code</a>
+                <h2>Default(first) Open and collapsible true</h2>
+                <div id="acord2" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-3">
+                <a class="showCode" data-id= "3" href="javascrip:;">show code</a>
+                <h2>Previous open section remains open</h2>
+                <div id="acord3" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-4">
+                <a class="showCode" data-id= "4" href="javascrip:;">show code</a>
+                <h2>All sections open</h2>
+                <div id="acord4" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-5">
+                <a class="showCode" data-id= "5" href="javascrip:;">show code</a>
+                <h2>Enabled or Disabled</h2>
+                <button id="enable">Enable</button>
+                <button id="disable">Disable</button>
+                <div id="acord5" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-6">
+                <a class="showCode" data-id= "6" href="javascrip:;">show code</a>
+                <h2>Expand or Collapse</h2>
+                <button id="expand">Expand</button>
+                <button id="collapse">collapse</button>
+                <div id="acord6" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-7">
+                <a class="showCode" data-id= "7" href="javascrip:;">show code</a>
+                <h2>CallBack function</h2>
+                <div id="acord7" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-8">
+                <a class="showCode" data-id= "8" href="javascrip:;">show code</a>
+                <h2>Change the expand or collapse behaviour of accordion</h2>
+                <div id="acord8" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-9">
+                <a class="showCode" data-id= "9" href="javascrip:;">show code</a>
+                <h2>Mangage show/hide (animation) speed</h2>
+                <div id="acord9" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-10">
+                <a class="showCode" data-id= "10" href="javascrip:;">show code</a>
+                <h2>Change headers icons</h2>
+                <div id="acord10" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-11">
+                <a class="showCode" data-id= "11" href="javascrip:;">show code</a>
+                <h2>Expand(open) specific index sections</h2>
+                <div id="acord11" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </aside>
     </div>
-    
-	<div class="fl clr">
-        <button id="enable">Enable</button><button id="disable">Disable</button>
-        <h2 style="margin-top: 25px;">Default functionality</h2>
-        <div id="acord1" class="acord" Get jobs handpicked by experts and be an early applicant>
-            <h3 class="acord_head">Section 1</h3>
-            <div class="acord_cont">
-                <p>
-                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
-                </p>
-            </div>
-            <h3 class="acord_head">Section 2</h3>
-            <div class="acord_cont">
-                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
-            </div>
-            <h3 class="acord_head">Section 3</h3>
-            <div class="acord_cont">
-                <p>Get a professional resume written by experts in text or visual format</p>
-                <ul>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ul>
-            </div>
-            <h3 class="acord_head">Section 4</h3>
-            <div class="acord_cont">
-                <p>
-                    Get jobs handpicked by experts and be an early applicant
-                </p>
-          </div>
-    </div>    
-    </div>
-	
-	<div class="fl">    
-        <h2>Collapsible : true</h2>
-        <div id="acord2" class="acord fl" Get jobs handpicked by experts and be an early applicant>
-            <h3 class="acord_head">Section 1</h3>
-            <div class="acord_cont">
-                <p>
-                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
-                </p>
-            </div>
-            <h3 class="acord_head">Section 2</h3>
-            <div class="acord_cont">
-                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
-            </div>
-            <h3 class="acord_head">Section 3</h3>
-            <div class="acord_cont">
-                <p>Get a professional resume written by experts in text or visual format</p>
-                <ul>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ul>
-            </div>
-            <h3 class="acord_head">Section 4</h3>
-            <div class="acord_cont">
-                <p>
-                    Get jobs handpicked by experts and be an early applicant
-                </p>
-          </div>
-    </div>
-    </div>
 
-	<div class="fl">    
-        <h2>Collapsible: true</h2>
-        <h2>previousOpen: true</h2>
-        <div id="acord3" class="acord fl" Get jobs handpicked by experts and be an early applicant>
-            <h3 class="acord_head">Section 1</h3>
-            <div class="acord_cont">
-                <p>
-                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
-                </p>
-            </div>
-            <h3 class="acord_head">Section 2</h3>
-            <div class="acord_cont">
-                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
-            </div>
-            <h3 class="acord_head">Section 3</h3>
-            <div class="acord_cont">
-                <p>Get a professional resume written by experts in text or visual format</p>
-                <ul>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ul>
-            </div>
-            <h3 class="acord_head">Section 4</h3>
-            <div class="acord_cont">
-                <p>
-                    Get jobs handpicked by experts and be an early applicant
-                </p>
-            </div>
-    	</div>
+
+     <!--Lightbox Create Job Alert-->
+    <div id="codeCont1" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                $('#acord1').accordion({
+                    active: false
+                });
+                </pre>
+            </code>
+        </div>
     </div>
-    <div class="fl">    
-        <h2>Collapsible: true</h2>
-        <h2>openAll : true</h2>
-        <div id="acord4" class="acord fl" Get jobs handpicked by experts and be an early applicant>
-            <h3 class="acord_head">Section 1</h3>
-            <div class="acord_cont">
-                <p>
-                    Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times
-                </p>
-            </div>
-            <h3 class="acord_head">Section 2</h3>
-            <div class="acord_cont">
-                <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
-            </div>
-            <h3 class="acord_head">Section 3</h3>
-            <div class="acord_cont">
-                <p>Get a professional resume written by experts in text or visual format</p>
-                <ul>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ul>
-            </div>
-            <h3 class="acord_head">Section 4</h3>
-            <div class="acord_cont">
-                <p>
-                    Get jobs handpicked by experts and be an early applicant
-                </p>
-            </div>
-    	</div>
+    <div id="codeCont2" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord2').accordion({
+                        collapsible: true
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <div id="codeCont3" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord3').accordion({
+                        collapsible: true,
+                        previousOpen: true
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <div id="codeCont4" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord4').accordion({
+                        collapsible: true,
+                        openAll: true
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <div id="codeCont5" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+            var instance = $('#acord5').accordion();
+
+            $('#disable').click(function() {
+                instance.disabled([0, 3]);
+            });
+
+            $('#enable').click(function() {
+                instance.enabled([0, 3]);
+            });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <div id="codeCont6" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+            var instance2 = $('#acord6').accordion({active:false});
+
+            $('#collapse').click(function() {
+                instance2.collapse([0, 2]);
+            });
+
+            $('#expand').click(function() {
+                instance2.expand([0, 2]);
+            });
+                </pre>
+            </code>
+        </div>
     </div>
 
+    <div id="codeCont7" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord7').accordion({
+                        callBack:function(){
+                            console.log('callBack fire',arguments);
+                        }
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
 
-</section>
+    <div id="codeCont8" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord8').accordion({
+                        openEvent:'mouseover'
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
 
+    <div id="codeCont9" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord9').accordion({
+                        showHideSpeed: 'slow'
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <div id="codeCont10" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord10').accordion({
+                        icons: {
+                            "header": "plus",
+                            "activeHeader": "minus"
+                        }
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
 
+    <div id="codeCont11" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord11').accordion({
+                        active: [0, 2]
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+    <!--/Lightbox Create Job Alert-->
 
-</div>
-   
-<script src="j/jquery-1.8.js" type="text/javascript"></script>
-<script src="j/accordion.js" type="text/javascript"></script>
-<script src="j/qunit-1.14.0.js" ></script>
-<script src="j/blanket.min.js" ></script>
-
-<script>	
-
-
-var abc = $('#acord1').accordion({
-				//onClick  : function(){ console.log("Hey, Don't Play with me")},		
-				active   : false,
-
-				//disabled:[0]
-			});	
-
-var ob2 =	$('#acord2').accordion({
-        		collapsible : true,
-        		showHideSpeed: 'medium',
-/*                callBack : function(){
-                    console.log('abc',arguments[0][0],arguments[1]);
-                }
-*/                
-
-        	});	
-
-var ob3 = $('#acord3').accordion({
-    		collapsible : true,
-    		previousOpen : true,
-    		active:[0,2],
-    		showHideSpeed: 'slow',
-    		openEvent: 'mouseover',		
-    		icons: { "header": "plus", "activeHeader": "minus" }
-    	});
-
-var ob4 =	$('#acord4').accordion({
-        		collapsible : true,
-        		openAll : true,
-                callBack : function(){
-                    console.log('abc',arguments[0][0],arguments[1]);
-                }
-        	});
-
-$('#disable').click(function(){
-    abc.disabled([0,3]);
-});
-$('#enable').click(function(){
-    abc.enabled([0,3]);
-});
-
-</script>
+    <script src="j/jquery-1.8.js" type="text/javascript"></script>
+    <script src="j/jquery.nav.js" type="text/javascript"></script>
+    <script src="j/accordion.js" type="text/javascript"></script>
+    <script src="j/lightBox.js" type="text/javascript"></script>
+    <script src="j/calls.js" type="text/javascript"></script>
 
 </body>
+
 </html>
