@@ -1,5 +1,5 @@
 .acord { width: 200px; /*For plus-minus arrow*/ }
-.acord .acord_head { cursor: pointer; padding: 10px 25px; margin: 3px 0 0 0; background-color: #e6e6e6; font-size: 15px; color: #747474; position: relative; /*for upDown arrow*/ }
+.acord .acord_head { cursor: pointer; padding: 10px 25px; margin: 3px 0 0 0; background-color: #f5f5f5; font-size: 15px; color: #747474; position: relative; /*for upDown arrow*/ }
 .acord .acord_head:hover { background-color: #cecece; }
 .acord .acordUp span, .acord .acordDown span { background: url(../i/acordSprite.png) no-repeat; width: 7px; height: 7px; top: 17px; left: 10px; position: absolute; }
 .acord .acordUp span { background-position: 0px -7px; }

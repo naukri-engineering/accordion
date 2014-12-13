@@ -1,7 +1,16 @@
-//jslint sub:true
+/*
+ * jQuery Accordion
+ * https://github.com/naukri-engineering/accordion
+ *
+ * Copyright (c) 2014 Naukri.com (http://www.naukri.com)
+ * Licensed under the MIT.
+ * Uses the same license as jQuery, see:
+ * http://jquery.org/license
+ *
+ * @version v1.0.0
+ * @Author : Mohd Saeed Khan (http://www.saeed3e.com)
+ */
 
-//Accordion js
-//version v3.0.3
 
 (function($) {
     $.fn.accordion = function(opts) {
@@ -16,13 +25,13 @@
             }
         }
 
-        if (opts.active === false) {
+        if (opts && opts.active === false) {
             opts.active = 'false';
-        } else if (opts.active && !opts.active.length) {
+        } else if (opts && opts.active && !opts.active.length) {
             opts.active = 0;
         }
 
-        if(opts.disabled === true){
+        if(opts && opts.disabled === true){
             opts.disabled = [];
         }
 
