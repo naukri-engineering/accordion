@@ -1,11 +1,15 @@
-Accordion (version : v1.0.0)
+jQuery Accordion (version : v1.0.0)
 =========
-Displays collapsible content panels for presenting information in a limited amount of space.
+-------------------------------------------------------
+
+## Features
+* Displays collapsible content panels for presenting information in a limited amount of space.
+* 
 
 -------------------------------------------------------
 
 ## Demo
-[Click me --:](http://naukri-engineering.github.io/accordion/)
+[Try out the demo. --:](http://naukri-engineering.github.io/accordion/)
 
 -------------------------------------------------------
 
@@ -35,18 +39,24 @@ Displays collapsible content panels for presenting information in a limited amou
 <div id="acord1" class="acord">
     <h3 class="acord_head">Section 1</h3>
     <div class="acord_cont">
-        <p>Directly get in touch with recruiters of your choice. Increase your profile views by 2-3 times</p>
+        Section1
     </div>
     <h3 class="acord_head">Section 2</h3>
     <div class="acord_cont">
-        <p>Upgrade your skills using e-Courses. Add credibility to your profile using Background Check</p>
+        Section2
     </div>
     <h3 class="acord_head">Section 3</h3>
     <div class="acord_cont">
-        <p>Get a professional resume written by experts in text or visual format</p>
+        Section3
     </div>
 </div>
 ```
+* Add Plugin Call
+
+```javascript
+    $('#acord1').accordion();
+```
+
 * Include the Style Sheet(accordion.css)
 * Include the suggestor javascript library(accordion.js) & updated jQuery liberary
 
@@ -64,13 +74,13 @@ previousOpen | false | if true then previous section remain open while active to
 showHideSpeed | 'slow' | 'slow' or  'medium' or 'fast' or an interger value (in miliseconds) e.g. 2000
 allOpen | false | Whether to show all section open(active) at once. Allows collapsing to each section.
 icons | { "header": "acordUp", "activeHeader": "acordDown" } | icons to use for headers. Set to false to have no icons displayed.
+onClick or callBack | null |Triggered after a panel has been activated. 
 
 
 ## Methods
 
 Name  |  Discription
 ----|-----
-onClick or callBack | Triggered after a panel has been activated. 
 enabled | If call with no arguments then enabled all sections of accordion, if pass a single argument as an interger/string then enabled the given index section , if argument pass as an array of intergers then enabled only matched indexes sections.
 disabled | If call with no arguments then disabled all sections of accordion, if pass a single argument as an interger/string then disabled the given index section , if argument pass as an array of intergers then disabled only matched indexes sections.
 collapse | If call with no arguments then collapse all sections of accordion, if pass a single argument as an interger/string then collapse the given index section , if argument pass as an array of intergers then collapse only matched indexes sections.
