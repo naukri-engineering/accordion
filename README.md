@@ -2,14 +2,14 @@ jQuery Accordion (version : v1.0.0)
 =========
 -------------------------------------------------------
 
-## Features
-* Displays collapsible content panels for presenting information in a limited amount of space.
-* 
+#### A lightweight jQuery Accordion plugin helps to display collapsible content panels for presenting information when the amount of space is limited. Easy to manage show/hide animation speed. It's use jQuery animation method to support for older browsers.
+
+#### It's also provide many configurable parametes and build in functions. (refer: parameters and method sections.)
 
 -------------------------------------------------------
 
 ## Demo
-[Try out the demo. --:](http://naukri-engineering.github.io/accordion/)
+[Try out the demo: ](http://naukri-engineering.github.io/accordion/)
 
 -------------------------------------------------------
 
@@ -33,7 +33,7 @@ jQuery Accordion (version : v1.0.0)
 
 ## Getting Started
 
-* Add required HTML
+* Add required HTML (Note : Each content panel(having class "acord_cont") must always be the next sibling after its associated header having class (acord_head))
 
 ```HTML
 <div id="acord1" class="acord">
