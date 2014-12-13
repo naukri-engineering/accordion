@@ -33,7 +33,7 @@ jQuery Accordion (version : v1.0.0)
 
 ## Getting Started
 
-* Add required HTML (Note : Each content panel(having class "acord_cont") must always be the next sibling after its associated header having class (acord_head))
+* Add required HTML 
 
 ```HTML
 <div id="acord1" class="acord">
@@ -50,6 +50,8 @@ jQuery Accordion (version : v1.0.0)
         Section3
     </div>
 </div>
+
+(Note : Each content panel (having class "acord_cont") must always be the next sibling after its associated header (having class "acord_head")
 ```
 * Add Plugin Call
 
