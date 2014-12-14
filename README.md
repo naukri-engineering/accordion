@@ -173,3 +173,6 @@ accord.enabled([1,3]); // espand first and third index sections.
 
 Note : index starts from zero.
 ```
+
+### Developer
+   [Mohd Saeed Khan](http://www.saeed3e.com)
