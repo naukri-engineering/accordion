@@ -4,7 +4,7 @@ jQuery Accordion (version : v1.0.0)
 
 ##### A lightweight jQuery Accordion plugin helps to display collapsible content panels for presenting information when the amount of space is limited. Easy to manage show/hide animation speed. It's use jQuery animation method to support for older browsers.
 
-##### It's also provide many configurable parametes and build in functions. (refer: parameters and method sections.)
+##### It's also provide many configurable parametes and built in functions. (refer: parameters and method sections.)
 
 -------------------------------------------------------
 
