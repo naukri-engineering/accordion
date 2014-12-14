@@ -2,9 +2,7 @@
         $('#nav').onePageNav();
     });
 
-    $('#acord1').accordion({
-        active: false
-    });
+    $('#acord1').accordion();
 
     $('#acord2').accordion({
         collapsible: true,
@@ -63,6 +61,10 @@
 
     $('#acord11').accordion({
         active: [0, 2]
+    });
+
+    $('#acord12').accordion({
+        active: false
     });
 
     //showCode 

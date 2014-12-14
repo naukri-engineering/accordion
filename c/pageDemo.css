@@ -10,8 +10,19 @@ body, dd, div, dl, dt, input, li, p, pre, select, td, textarea {
 	font-size: 12px;
 }
 .wrapper{width: 1000px; overflow: hidden; margin: 0 auto;margin-top: 100px;}
-button{ padding: 10px; border: 0 ;  background-color: #09c; color: #fff; cursor: pointer; margin-bottom: 10px}
-button:hover{background-color: #0f89b2}
+button{ padding:5px 10px; border: 0 ;  cursor: pointer; margin-bottom: 10px;color: #0099cc; background-color: #fff; border: 1px solid #0099cc;}
+button:hover{background-color: #0f89b2; color: #fff;}
+.forkGit{display: inline-block;
+    top: 0;
+    position: absolute;
+    right: 0;
+    border: 1px solid;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.forkGit:hover{color:#fff;background-color: #09c;}
+h1{position: relative;}
+
 
 /** LightBox CSS */
 .ltCont, .ltLayer { position: absolute; top: 0; right: 0; left: 0; bottom: 0; }

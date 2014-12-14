@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Accordion</title>
     <link rel="stylesheet" href="c/accordion.css" type="text/css" />
-    <link rel="stylesheet" href="c/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="c/pageDemo.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -17,12 +17,13 @@
     <div class="wrapper">
         <h1>
             <a style="" href="https://github.com/naukri-engineering/accordion">Accordion</a>
+            <a class="forkGit" href="https://github.com/naukri-engineering/accordion">Fork on Github</a>
         </h1>
         <div class="clr"></div>
 
         <ul id="nav" class="nav">
-            <li class="current"><a href="#section-1">All Closed</a></li>
-            <li><a href="#section-2">Default Open and collapsible true</a></li>
+            <li class="current"><a href="#section-1">Default</a></li>
+            <li><a href="#section-2">Collapsible On</a></li>
             <li><a href="#section-3">Previous unChanged</a></li>
             <li><a href="#section-4">On load : Open all section</a></li>
             <li><a href="#section-5">Enable or Disable</a></li>
@@ -31,14 +32,15 @@
             <li><a href="#section-8">openEvent: onmouseover</a></li>
             <li><a href="#section-9">Show/Hide Speed</a></li>
             <li><a href="#section-10">Change Header Icons</a></li>
-            <li><a href="#section-10">Expand specific index section</a></li>
+            <li><a href="#section-11">Expand specific index section</a></li>
+            <li><a href="#section-12">All Closed</a></li>
         </ul>
 
         <aside style="width:700px; float:right">
 
             <section id="section-1" style="margin-top:0">
                 <a class="showCode" data-id= "1" href="javascrip:;">show code</a>
-                <h2>Default functionality</h2>
+                <h2>Default</h2>
                 <div id="acord1" class="acord">
                     <h3 class="acord_head">Section 1</h3>
                     <div class="acord_cont">
@@ -66,7 +68,7 @@
 
             <section id="section-2">
                 <a class="showCode" data-id= "2" href="javascrip:;">show code</a>
-                <h2>Default(first) Open and collapsible true</h2>
+                <h2>Collapsible On</h2>
                 <div id="acord2" class="acord">
                     <h3 class="acord_head">Section 1</h3>
                     <div class="acord_cont">
@@ -347,6 +349,34 @@
                     </div>
                 </div>
             </section>
+
+            <section id="section-12">
+                <a class="showCode" data-id= "12" href="javascrip:;">show code</a>
+                <h2>All Closed</h2>
+                <div id="acord12" class="acord">
+                    <h3 class="acord_head">Section 1</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section1 content goes here.
+                        </p>
+                    </div>
+                    <h3 class="acord_head">Section 2</h3>
+                    <div class="acord_cont">
+                        <p>Section2 content goes here.</p>
+                    </div>
+                    <h3 class="acord_head">Section 3</h3>
+                    <div class="acord_cont">
+                        <p>Section3 content goes here.</p>
+
+                    </div>
+                    <h3 class="acord_head">Section 4</h3>
+                    <div class="acord_cont">
+                        <p>
+                            Section4 content goes here.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </aside>
     </div>
 
@@ -502,6 +532,19 @@
                 <pre>
                     $('#acord11').accordion({
                         active: [0, 2]
+                    });
+                </pre>
+            </code>
+        </div>
+    </div>
+
+    <div id="codeCont12" class="ltBx clstr lightbox">
+        <div class="ltCntnt">
+            <h1>plugin call</h1>
+            <code>
+                <pre>
+                    $('#acord12').accordion({
+                        active: false
                     });
                 </pre>
             </code>
